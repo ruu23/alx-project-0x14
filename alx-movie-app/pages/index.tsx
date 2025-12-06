@@ -1,7 +1,8 @@
 import Button from "@/components/commons/Button";
 import { useRouter } from "next/router";
 const Home: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
+
   return (
     <div className="bg-[#171D22] text-white">
       <section
@@ -22,7 +23,7 @@ const Home: React.FC = () => {
           </p>
           <Button
             title="Browse Movies"
-            action={() => router.push('/movies', undefined, { shallow: false })}
+            action={() => router.push("/movies", undefined, { shallow: false })}
           />
         </div>
       </section>
